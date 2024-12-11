@@ -10,11 +10,11 @@ const Homepage = () => {
     <div className="homepage">
       <img src="/orbital.png" alt="" className="orbital" />
       <div className="left">
-        <h1>LAMA AI</h1>
-        <h2>Supercharge your creativity and productivity</h2>
+        <h1>Chatbot AI</h1>
+        <h2>Build smarter conversations with our advanced Chatbot AI.</h2>
         <h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sint
-          dolorem doloribus, architecto dolor.
+          Chatbot AI is an advanced technology designed to simulate human-like
+          conversations, making interactions faster, smarter, and more engaging.
         </h3>
         <Link to="/dashboard">Get Started</Link>
       </div>
@@ -37,22 +37,22 @@ const Homepage = () => {
             />
             <TypeAnimation
               sequence={[
-                "Human:We produce food for Mice",
+                "Human1 : Can you recommend a good Italian restaurant nearby?",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot : We produce food for Hamsters",
+                "Bot : Try Bella Italia on Main Street!",
                 2000,
                 () => {
                   setTypingStatus("human2");
                 },
-                "Human2 : We produce food for Guinea Pigs",
+                "Human2 : What's the weather like today?",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot : We produce food for Chinchillas",
+                "Bot : It's sunny with a high of 75°F.",
                 2000,
                 () => {
                   setTypingStatus("human1");
